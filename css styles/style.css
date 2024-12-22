@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", serif;
+}
+
+header {
+  height: 100vh;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6)),
+    url("../images/hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header .header-content h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.navbar .navbar-brand {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.navbar .nav-link {
+  color: white;
+  margin: 0 6px;
+  font-weight: 600;
+  font-size: 18px;
+  transition: transform 0.3s;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-scrolled {
+  background-color: white !important;
+}
+
+.navbar-scrolled .navbar-brand,
+.navbar-scrolled .navbar-nav .nav-link {
+  color: black !important;
+}
+
+.navbar-scrolled .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+#navbar-spy {
+  transition: background-color 0.3s ease;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: white !important;
+  text-decoration: underline;
+}
+
+.nav-link:hover {
+  transform: scale(1.05);
+}
+
+.about .skills p {
+  margin: 0;
+  color: #4e4e4e;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.about .lead {
+  font-size: 1rem;
+  color: #4e4e4e;
+  font-weight: 400;
+}
+
+.about-title {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.about .about-title::after {
+  content: "";
+  width: 100px;
+  height: 4px;
+  background-color: #0078ff;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+.services .services-title {
+  font-size: 32px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.services-title::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 4px;
+  background-color: #0078ff;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+}
+
+.services-description {
+  color: #4e4e4e;
+}
+
+.services .card {
+  border-radius: 18px;
+  transition: transform 0.6s ease;
+  border: 0;
+  cursor: pointer;
+}
+
+.services .card:hover {
+  transform: translateY(-10px);
+  border-bottom: 4px solid #0078ff;
+}
+
+.services .card:hover .card-title {
+  color: #0078ff;
+}
+
+.card-title {
+  transition: color 0.3s ease;
+}
+
+.card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #0078ff;
+  border-radius: 50%;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.card-text {
+  color: #4e4e4e;
+}
+
+.statistics {
+  background-image: linear-gradient(
+      rgb(0, 120, 255, 0.5),
+      rgb(0, 120, 255, 0.5)
+    ),
+    url("../images/counters-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.statistics .statistics-item .icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border: white solid 7px;
+  border-radius: 50%;
+  transition: transform 0.5s;
+}
+
+.statistics-item .icon:hover {
+  transform: scale(1.1);
+}
+
+.portfolio .card .card-body-icon {
+  border: 3px #0078ff solid;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0078ff;
+}
+
+.portfolio .card .card-body-title span {
+  color: #0078ff;
+  font-weight: 600;
+}
+
+.portfolio .card:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio .card img {
+  transition: transform 0.7s ease;
+}
+
+.portfolio .portfolio-title {
+  font-size: 32px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.portfolio-title::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 4px;
+  background-color: #0078ff;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+}
+
+.carousel {
+  background-image: linear-gradient(
+      rgb(0, 120, 255, 0.5),
+      rgb(0, 120, 255, 0.5)
+    ),
+    url("../images/overlay-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.carousel .carousel-indicators {
+  top: 100%;
+}
+
+.carousel .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.blog .blog-title {
+  font-size: 32px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.blog-title::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background-color: #0078ff;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+}
+
+.contact .contact-title {
+  font-size: 32px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.contact-title::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 4px;
+  background-color: #0078ff;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+}
+
+.contact form input,
+.contact form textarea {
+  padding: 10px;
+}
+
+.contact .list-unstyled li {
+  font-size: 1.2rem;
+  color: #495057;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-image: linear-gradient(
+      rgb(0, 120, 255, 0.4),
+      rgb(0, 120, 255, 0.4)
+    ),
+    url("../images/overlay-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 992px) {
+  header .header-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  header .header-content span {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  header .header-content h1 {
+    font-size: 36px;
+  }
+
+  .about img {
+    margin-bottom: 20px;
+  }
+
+  header .header-content span {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  header .header-content h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  header .header-content span {
+    font-size: 20px;
+  }
+}
